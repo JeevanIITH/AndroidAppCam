@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--    <TextView-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:text="Home Fragment" />-->
+
+
+
+    <LinearLayout
+        android:id='@+id/linear_header'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf='parent'
+        app:layout_constraintTop_toTopOf='parent'>
+
+
+        <TextView
+            android:id="@+id/TextView_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homePageTitle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="673dp"-->
+<!--        android:fillViewport="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linear_header">-->
+
+
+<!--        &lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:id="@+id/PostTextView"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:text="Posts"&ndash;&gt;-->
+<!--        &lt;!&ndash;        />&ndash;&gt;-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHomePosts"
+        android:layout_width="408dp"
+        android:layout_height="680dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_header" />
+
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
